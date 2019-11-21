@@ -1,0 +1,15 @@
+public class BouncingBall {
+  
+  public static int bouncingBall(double h, double bounce, double window) {
+    if ((h <= 0) || (window >= h) || (bounce <= 0) || (bounce >= 1))
+      return -1;
+    int seen = -1;
+    while (h > window) 
+    { 
+          seen += 2;
+          h = h * bounce;
+    }
+      return seen;
+    
+  }
+}
